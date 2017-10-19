@@ -1,0 +1,85 @@
+<div style="background:url({{media url="wysiwyg/porto/homepage/slider/18/banner-img.jpg"}}) 73% 0 no-repeat; color: #3d3734; margin: 0 auto; background-size: cover;">
+	<div class="banner-content-18">
+		<div class="container" style="text-align: left;">
+			<div class="row" style="padding-left:5%">
+				<div class="col-sm-8">
+					<div class="text-content" style="display: inline-block">
+						<em style="font-style: normal; display: block;font-weight:600;">NEW ARRIVALS</em>
+						<h2 style="line-height: 1;font-weight:800;margin:0;color:#3d3734">FASHION</h2>
+						<p><span style="vertical-align: top;font-weight:300;">UP TO <b style="font-weight:800;">70% OFF</b> IN THE NEW COLLECTION</span></p>
+						<p><a href="#" class="btn btn-default" style="vertical-align: top; font-weight: 400;">SHOP NOW</a></p>
+					</div>
+					<div class="owl-middle-outer-narrow" style="text-align: left;">
+						<p class="filter-title-type-2"><span style="width:215px">SELECTED <b>PRODUCTS</b></span><span class="title-line">&nbsp;</span></p>
+						<div id="featured_products" class = "hide-addtocart hide-addtolinks" style="margin: 0 -10px;">
+							{{block type="filterproducts/featured_home_list" product_count="8" template="filterproducts/list.phtml"}}
+						</div>
+						<script type="text/javascript">
+							jQuery(function($){
+								$("#featured_products .filter-products .owl-carousel").owlCarousel({
+									itemsCustom: [ [0, 1], [320, 1], [480, 2], [768, 2], [992, 3], [1200, 3] ],
+									responsiveRefreshRate: 50,
+									slideSpeed: 200,
+									paginationSpeed: 500,
+									scrollPerPage: false,
+									stopOnHover: true,
+									rewindNav: true,
+									rewindSpeed: 600,
+									pagination: false,
+									navigation: true,
+									autoPlay: true,
+									navigationText:["<i class='icon-left-open'></i>","<i class='icon-right-open'></i>"]
+								});
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="masonry-grid" id="masonry_grid_18">
+	<div class="grid-sizer"></div>
+	<div class="masonry-grid-item w2"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/holiday_crop.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/cybermonday_oceanside.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/beauty.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item w3"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/porto/homepage/slider/18/grid_item_04.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item w4"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/porto/homepage/slider/18/grid_item_05.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/porto/homepage/slider/18/grid_item_06.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/porto/homepage/slider/18/grid_item_07.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item w2"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/kitchen_crop.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/porto/homepage/slider/18/grid_item_09.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/porto/homepage/slider/18/grid_item_10.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/porto/homepage/slider/18/grid_item_11.jpg"}}" alt="" /></a></div>
+</div>
+<script type="text/javascript">
+    jQuery( function($) {
+        var $container = $('#masonry_grid_18').imagesLoaded(function(){
+            $container.packery({
+                itemSelector: ".masonry-grid-item",
+                columnWidth: ".grid-sizer",
+                percentPosition: true
+            });
+        });
+    });
+</script>
+<style type="text/css">
+	.masonry-grid{margin: 3px;position:relative;}
+	.grid-sizer, .masonry-grid-item{width:25%;padding:3px}
+	.masonry-grid-item a{display:block;position:relative;}
+	.masonry-grid-item a:before{width:100%;height:100%;display:block;content:"";position:absolute;visibility:hidden;opacity:0;filter:alpha(opacity=0);background-color:#000;transition:0.3s all;}
+	.masonry-grid-item a:hover:before{visibility:visible;opacity:0.2;filter:alpha(opacity=20);}
+	.masonry-grid-item.w2{width:50%;}
+	.masonry-grid-item.w3{width:75%;}
+	.masonry-grid-item.w4{width:100%;}
+	.masonry-grid img{width:100%;}
+	.owl-middle-outer-narrow .owl-controls .owl-buttons div{color:#3d3734}
+	@media(max-width:767px){
+		.masonry-grid-item{width:50%}
+		.masonry-grid-item.w2,.masonry-grid-item.w3{width:100%}
+	}
+	@media(max-width:480px){
+		.masonry-grid-item{width:100%}
+	}
+</style>
