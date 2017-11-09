@@ -1,0 +1,324 @@
+<img src="{{media url="wysiwyg/our-story/weareshs.jpg"}}" alt="We Are Simplified Home Solutions." style="display: block; margin: auto; max-width: 100%; height: auto;"/>
+
+<div style="max-width:840px;margin:auto;font-size:1.2em;padding:2px;color:black;">
+
+<br><br><br>
+
+<!-- <h1 style="text-align:center;font-weight:bold;color:black;">WE ARE SIMPLIFIED HOME SOLUTIONS</h1> -->
+
+<p style="text-align:center;">Home is where the heart is. We believe that if you can create a paradise at home, you can create a paradise in life.</p>
+
+<!--<div style="border:1px solid black; width: 480px; height: 180px; float:right;"></div>-->
+
+<br><br>
+
+<h2 style="font-style:italic;font-weight:bold;color:black;">It started with an idea in a messy, disorganized cubicle...</h2>
+
+<br><br>
+
+<p>“How great would it be to have a one-stop shop for your home needs and living essentials?” We recognized that we have ideas that people can use, so we put our problem-solving hats on and got to work. Thus, Simplified Home Solutions was born.</p>
+
+<br><br>
+
+<h2 style="text-align:right;font-weight:bold;color:black;">The SHS Mission</h2>
+
+<br><br>
+
+<p style="text-align:right;">Simplified Home Solutions strives to become the world’s leading providers of easy home living. Using our portfolio of unique consumer products, we seek to make shopping more convenient to allow time for what matters most.</p>
+
+<p style="text-align:right;">From home to kitchen to health and everything else in between, we want to create a place where people can find creative and practical solutions that complement their ideal lifestyles.</p>
+
+<br><br>
+
+<h2 style="font-style:italic;font-weight:bold;color:black;">Enough about us — let’s talk about you.</h2>
+
+<br><br>
+
+<p>Simplified Home Solutions wants to give you the ease of shopping for your home goods from the comfort of your home. People are busy, we understand. Sometimes there just aren’t enough hours in the day. It can be stressful trying to balance what we need to do and what we want to do, so our team of designers keep you in mind and take care of all household lifting.</p>
+
+<p>Our time, our solutions, your home.</p>
+
+<br><br><br>
+
+</div>
+
+<div style="max-width: 840px;margin:auto;">
+
+  <h1 style="text-align:center;font-weight:bold;color:black;">MEET THE TEAM</h1>
+
+  <br>
+
+  <div class="square bg img1">
+      <div class="content">
+          <div class="table">
+              <div class="table-cell">
+                Will.I.is<br>
+                Zen Philosopher<br>
+                Travel Enthusiast<br>
+                Dedicated Gym Rat<br>
+                The Glass Half Full Guy
+
+              </div>
+          </div>
+      </div>
+  </div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+A·P<br>
+2017 Dodgers Fan<br>
+(still in progress)
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+Rodstar <br>
+Full-time Rock Star <br>
+Part-time “Blogger” <br>
+Could’ve gone pro… <br>
+Swoll is the goal <br>
+The Brofessor
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2nd row verticaly centered images in square columns -->
+
+<div class="square bg img4">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+Andre
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img5">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+Sia<br>
+Lefty Guitarist<br>
+Cinemagraph Buff<br>
+Constant Overthinker<br>
+Avid Napper<br>
+Trojan Fan
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img6">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+Shley<br>
+Podcast Junkie<br>
+Health Enthusiast<br>
+Professional Bruncher<br>
+Country Music Aficionado<br>
+Avocado Toast Connoisseur<br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 3rd row responsive images in background with centered content -->
+
+<!-- <div class="square bg img7">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Centered responsive images as background with centered content over it.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img8">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Again
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img9">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                And again
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+</div>
+
+<style>
+
+.square{
+    float:left;
+    position: relative;
+    width: 32%;
+    padding-bottom : 32%; /* = width for a 1:1 aspect ratio */
+    margin:0.66%;
+    background-color:#1E1E1E;
+    overflow:hidden;
+}
+
+.square:before{
+  background: rgba(0,0,0,0);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s;
+}
+
+.square:hover:before{
+  background: rgba(0,0,0,0.4);
+}
+
+.content{
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    margin: 5%;
+    text-align:center;
+    color:#fff;
+    opacity: 0;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    font-size:1.2em;
+}
+
+.square:hover .content{
+  display:block;
+  opacity: 1;
+}
+
+.darken{
+  opacity: 0;
+}
+
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+    line-height: 1.25;
+}
+
+
+
+/*  For responsive images */
+
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+}
+/*  For responsive images as background */
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    color:#fff;
+    opacity: 1;
+}
+
+.img1{
+    background-image: url('{{media url="wysiwyg/team/willis_1.jpg"}}');
+}
+
+.img2{
+    background-image: url('{{media url="wysiwyg/team/adrian_move_1.jpg"}}');
+}
+.img3{
+    background-image: url('{{media url="wysiwyg/team/rod_1.jpg"}}');
+}
+.img4{
+    background-image: url('{{media url="wysiwyg/team/andre_move_1.jpg"}}');
+}
+.img5{
+    background-image: url('{{media url="wysiwyg/team/matt_move_1.jpg"}}');
+}
+.img6{
+    background-image: url('{{media url="wysiwyg/team/ashley_1.jpg"}}');
+}
+/*.img7{
+    background-image: url('{{media url="wysiwyg/team/ash1.jpg"}}');
+}
+.img8{
+    background-image: url('{{media url="wysiwyg/team/ash1.jpg"}}');
+}
+.img9{
+    background-image: url('{{media url="wysiwyg/team/ash1.jpg"}}');
+}*/
+
+/*  following just for the demo */
+
+.numbers{
+    font-weight:900;
+    font-size:100px;
+}
+
+#bottom {
+    clear:both;
+    margin:0 1.66%;
+    width:89.68%;
+    padding: 3.5%;
+    background-color:#1E1E1E;
+    color: #fff;
+}
+#bottom p{
+    text-align:center;
+    line-height:2em;
+}
+#bottom a{
+    color: #000;
+    text-decoration:none;
+    border:1px solid #000;
+    padding:10px 20px 12px;
+    line-height:70px;
+    background:#ccc;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#bottom a:hover{
+    background:#ECECEC;
+    border:1px solid #fff;
+}
+
+@media(max-width:767px){
+.table-cell{
+  line-height:1.1;
+  font-size:14px;
+}
+}
+@media(max-width:480px){
+  .table-cell{
+    line-height:1;
+    font-size:10px;
+  }
+}
+
+</style>

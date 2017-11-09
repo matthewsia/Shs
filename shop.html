@@ -1,0 +1,307 @@
+<div class="mainbox">
+<div class="rectangle bg img1">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="subbox">
+<div class="square bg img2">
+  <div class="content">
+      <div class="table">
+          <div class="table-cell">
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="square bg img3">
+  <div class="content">
+      <div class="table">
+          <div class="table-cell">
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- 2nd row verticaly centered images in square columns -->
+
+<div class="square bg img4">
+ <div class="content">
+      <div class="table">
+          <div class="table-cell">
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="square bg img5">
+  <div class="content">
+      <div class="table">
+          <div class="table-cell">
+
+          </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+<div class="navbox">
+
+  <div class="categorybox">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="categorybox">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="categorybox">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="categorybox">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="categorybox">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+
+.mainbox{
+  width: 66.67%;
+  float:left;
+}
+
+.subbox{
+  width: 33.33%;
+  float:left;
+}
+
+.navbox{
+  width:100%;
+  float:left;
+  margin-top: 10px;
+}
+
+.categorybox{
+  float:left;
+  position: relative;
+  width: 19%;
+  padding-bottom : 12%; /* = width for a 1:1 aspect ratio */
+  margin:0.5%;
+  background-color:#1E1E1E;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.rectangle{
+  float:left;
+  position: relative;
+  width: 98.92%;
+  padding-bottom : 48.92%; /* = width for a 1:1 aspect ratio */
+  margin:0.54%;
+  background-color:#1E1E1E;
+  overflow:hidden;
+}
+
+.square{
+  float:left;
+  position: relative;
+  width: 48%;
+  padding-bottom : 48%; /* = width for a 1:1 aspect ratio */
+  margin:1%;
+  background-color:#1E1E1E;
+  overflow:hidden;
+}
+
+.square:before{
+background: rgba(0,0,0,0);
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+transition: all 0.4s;
+}
+
+.square:hover:before{
+background: rgba(0,0,0,0.4);
+}
+
+.content{
+  position:absolute;
+  height:90%; /* = 100% - 2*5% padding */
+  width:90%; /* = 100% - 2*5% padding */
+  padding: 5%;
+  margin: 5%;
+  text-align:center;
+  color:#fff;
+  opacity: 0;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  font-size:1.2em;
+}
+
+.square:hover .content{
+display:block;
+opacity: 1;
+}
+
+.darken{
+opacity: 0;
+}
+
+.table{
+  display:table;
+  width:100%;
+  height:100%;
+}
+.table-cell{
+  display:table-cell;
+  vertical-align:middle;
+  line-height: 1.25;
+}
+
+
+
+/*  For responsive images */
+
+.content .rs{
+  width:auto;
+  height:auto;
+  max-height:90%;
+  max-width:100%;
+}
+/*  For responsive images as background */
+
+.bg{
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+  color:#fff;
+  opacity: 1;
+}
+
+/*.img1{
+  background-image: url('{{media url="wysiwyg/team/willis_1.jpg"}}');
+}
+
+.img2{
+  background-image: url('{{media url="wysiwyg/team/adrian_move_1.jpg"}}');
+}
+.img3{
+  background-image: url('{{media url="wysiwyg/team/rod_1.jpg"}}');
+}
+.img4{
+  background-image: url('{{media url="wysiwyg/team/andre_move_1.jpg"}}');
+}
+.img5{
+  background-image: url('{{media url="wysiwyg/team/matt_move_1.jpg"}}');
+}
+.img6{
+  background-image: url('{{media url="wysiwyg/team/ashley_1.jpg"}}');
+}*/
+/*.img7{
+  background-image: url('{{media url="wysiwyg/team/ash1.jpg"}}');
+}
+.img8{
+  background-image: url('{{media url="wysiwyg/team/ash1.jpg"}}');
+}
+.img9{
+  background-image: url('{{media url="wysiwyg/team/ash1.jpg"}}');
+}*/
+
+/*  following just for the demo */
+
+.numbers{
+  font-weight:900;
+  font-size:100px;
+}
+
+#bottom {
+  clear:both;
+  margin:0 1.66%;
+  width:89.68%;
+  padding: 3.5%;
+  background-color:#1E1E1E;
+  color: #fff;
+}
+#bottom p{
+  text-align:center;
+  line-height:2em;
+}
+#bottom a{
+  color: #000;
+  text-decoration:none;
+  border:1px solid #000;
+  padding:10px 20px 12px;
+  line-height:70px;
+  background:#ccc;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#bottom a:hover{
+  background:#ECECEC;
+  border:1px solid #fff;
+}
+
+@media(max-width:767px){
+.table-cell{
+line-height:1.1;
+font-size:14px;
+}
+}
+@media(max-width:480px){
+.table-cell{
+  line-height:1;
+  font-size:10px;
+}
+}
+
+</style>
