@@ -1,0 +1,92 @@
+<!-- Mobile Menu -->
+
+<div class="mobilemenu">
+
+<a href="/shop.html"><div id="shopnav" class="navbutton shopnav" style="background-image: url('{{media url="wysiwyg/mobilemenu/shop.png"}}')"></div></a>
+<a href="/our-story.html"><div id="aboutnav" class="navbutton aboutnav" style="background-image: url('{{media url="wysiwyg/mobilemenu/about.png"}}')"></div></a>
+<a href="/index.php"><div id="homenav" class="navbutton homenav" style="background-image: url('{{media url="wysiwyg/mobilemenu/home.png"}}')"></div></a>
+<a href="/contacts"><div id="contactsnav" class="navbutton contactsnav" style="background-image: url('{{media url="wysiwyg/mobilemenu/contact.png"}}')"></div></a>
+<a href="/customer/account"><div id="accountnav" class="navbutton accountnav" style="background-image: url('{{media url="wysiwyg/mobilemenu/account.png"}}')"></div></a>
+
+</div>
+
+<style>
+
+.mobilemenu{
+  display:none;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color:#eeeeee;
+  z-index: 99;
+}
+
+.navbutton{
+  width:20%;
+  float:left;
+  padding-top:15%;
+  border: 1px solid #888;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.2s;
+}
+
+.activenav{
+  background-color:#d0d0d0;
+}
+
+@media(max-width:768px){
+.mobilemenu{
+  display:block;
+}
+.form-search{
+  width:330px;
+}
+.header-container.type11 .menu-icon a{
+  display:none;
+}
+#totop{
+  display:none !important;
+}
+}
+
+@media(max-width:375px){
+.mobilemenu{
+  display:block;
+}
+.form-search{
+width:330px;
+}
+}
+
+input:focus .mobilemenu{
+  display:none;
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+$(".mobilemenu a").each(function () {
+    if (this.href == document.URL) {
+        $(this).find("div").addClass('activenav');
+    }
+    if (window.location.pathname+window.location.search == "/") {
+        $("#homenav").addClass('activenav');
+    }
+    if (window.location.pathname+window.location.search == "/customer/account/login/"){
+        $("#accountnav").addClass('activenav');
+    }
+});
+$(".navbutton").click(function(){
+  $(".navbutton").removeClass('activenav');
+  $(this).addClass('activenav');
+});
+});
+
+</script>
