@@ -1,0 +1,30 @@
+.cms-index-index .header-container.type14 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+}
+.footer-bottom {
+    border-top: 1px solid #ecebec;
+}
+.footer-middle {
+    border-bottom: 1px solid #dddbdd;
+}
+
+.header .logo img {
+    max-width: 115%;
+}
+
+.page-header {
+    min-height: 85px;
+}
+
+.header-container.type11 .menu-icon a {
+color: #01191e;
+}
+
+@media(max-width:425px){
+.header-container.type11 .menu-icon a{
+  display:none;
+}
+}

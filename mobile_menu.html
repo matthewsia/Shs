@@ -1,5 +1,13 @@
 <!-- Mobile Menu -->
 
+<script></script>
+
+<head>
+
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+</head>
+
 <div class="mobilemenu">
 
 <a href="/shop.html"><div id="shopnav" class="navbutton shopnav" style="background-image: url('{{media url="wysiwyg/mobilemenu/shop.png"}}')"></div></a>
@@ -17,27 +25,32 @@
   position:fixed;
   bottom:0;
   left:0;
+right:0;
   width:100%;
   background-color:#eeeeee;
   z-index: 99;
+margin-bottom:0;
 }
 
 .navbutton{
   width:20%;
   float:left;
-  padding-top:15%;
   border: 1px solid #888;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: all 0.2s;
+padding-top:15%;
 }
 
 .activenav{
   background-color:#d0d0d0;
 }
 
-@media(max-width:768px){
+@media(max-width:425px){
+body{
+
+}
 .mobilemenu{
   display:block;
 }
@@ -45,11 +58,22 @@
   width:330px;
 }
 .header-container.type11 .menu-icon a{
-  display:none;
+padding:3px;
 }
 #totop{
   display:none !important;
 }
+.menu-icon, .search-area{
+  background-color:#f1f1f1;
+  border-radius:3px;
+}
+.top-links-icon{
+  background-color:#f1f1f1;
+}
+.menu-icon a{
+padding:3px;
+}
+
 }
 
 @media(max-width:375px){
@@ -61,32 +85,4 @@ width:330px;
 }
 }
 
-input:focus .mobilemenu{
-  display:none;
-}
-
 </style>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
-$(".mobilemenu a").each(function () {
-    if (this.href == document.URL) {
-        $(this).find("div").addClass('activenav');
-    }
-    if (window.location.pathname+window.location.search == "/") {
-        $("#homenav").addClass('activenav');
-    }
-    if (window.location.pathname+window.location.search == "/customer/account/login/"){
-        $("#accountnav").addClass('activenav');
-    }
-});
-$(".navbutton").click(function(){
-  $(".navbutton").removeClass('activenav');
-  $(this).addClass('activenav');
-});
-});
-
-</script>

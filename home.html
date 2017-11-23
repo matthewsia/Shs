@@ -1,4 +1,4 @@
-<div style="background:url({{media url="wysiwyg/tiles/home.jpg"}}) 50% 0 no-repeat; color: #3d3734; margin: 0 auto; background-size: cover;">
+<div style="background:url({{media url="wysiwyg/tiles/home.jpg"}}) 55% 0 no-repeat; color: #3d3734; margin: 0 auto; background-size: cover;">
 	<div class="banner-content-18">
 		<div class="container" style="text-align: left;">
 			<div class="row" style="padding-left:5%">
@@ -9,25 +9,26 @@
 						<span class="value" style="font-style: normal; display: block;font-weight:600;">Your Onestop Shop for Home Goods</span>
 						<h2 style="line-height: 1;font-weight:800;margin:0;color:#3d3734"></h2>
 						<p><span style="vertical-align: top;font-weight:300;"><b style="font-weight:800;"></b> </span></p>
-						<p><a href="#" class="btn btn-default" style="vertical-align: top; font-weight: 400;margin-bottom:0;">SHOP NOW</a></p>
+						<p><a href="shop.html" class="btn btn-default" style="vertical-align: top; font-weight: 400;margin-bottom:0;">SHOP NOW</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+							<div style="position: relative; bottom:0; width:100%;height:auto;"><img style="cursor:pointer;" src="{{media url="wysiwyg/icons/down.png"}}" alt="" onclick="scrollToTiles()"/></div>
 </div>
 
 <div class="masonry-grid" id="masonry_grid_18">
 	<div class="grid-sizer"></div>
-	<div class="masonry-grid-item w2"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/holiday_text_lowres.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/cybermonday.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/beauty_text.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item w3"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/new2_text.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item w4"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/pethome.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/solar.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/fitness.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item w2"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/kitchen_text_lowres.jpg"}}" alt="" /></a></div>
-	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/feature1.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item w2"><a href="shop/collections/holiday-checklist.html"><img src="{{media url="wysiwyg/tiles/holiday_text_lowres.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="shop/collections/cyber-monday.html"><img src="{{media url="wysiwyg/tiles/cybermonday.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="shop/collections/bath-beauty.html"><img src="{{media url="wysiwyg/tiles/beauty_text.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item w3"><a href="shop/collections/new-arrivals.html"><img src="{{media url="wysiwyg/tiles/new2_text.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item w4"><a href="shop/pet.html"><img src="{{media url="wysiwyg/tiles/pethome.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="shop/collections/solar.html"><img src="{{media url="wysiwyg/tiles/solar.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="shop/wellness.html"><img src="{{media url="wysiwyg/tiles/fitness.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item w2"><a href="shop/collections/kitchen-essentials.html"><img src="{{media url="wysiwyg/tiles/kitchen_text_lowres.jpg"}}" alt="" /></a></div>
+	<div class="masonry-grid-item"><a href="internet-policy"><img src="{{media url="wysiwyg/tiles/feature1.jpg"}}" alt="" /></a></div>
 	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/feature2.jpg"}}" alt="" /></a></div>
 	<div class="masonry-grid-item"><a href="javascript:void(0)"><img src="{{media url="wysiwyg/tiles/feature3.jpg"}}" alt="" /></a></div>
 </div>
@@ -43,6 +44,9 @@
     });
 </script>
 <style type="text/css">
+.homenav{
+  background-color:#d0d0d0;
+}
 	.masonry-grid{margin: 3px;position:relative;}
 	.grid-sizer, .masonry-grid-item{width:25%;padding:3px}
 	.masonry-grid-item a{display:block;position:relative;}
@@ -66,9 +70,39 @@
 		.masonry-grid-item{width:50%}
 		.masonry-grid-item.w2,.masonry-grid-item.w3{width:100%}
 		.slogan{font-size:32px;letter-spacing:-1px;}
+				.value{font-size:16px;}
 	}
 	@media(max-width:480px){
 		.masonry-grid-item{width:100%}
 				.slogan{font-size:24px;letter-spacing:-1px;}
 	}
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$(".navbutton").click(function(){
+		$(".navbutton").removeClass('homenav');
+		$(this).addClass('homenav');
+	});
+});
+function scrollToTiles(){
+$('html,body').animate({
+            scrollTop: $("#masonry_grid_18").offset().top},
+            'slow');
+}
+</script>
+
+<div class="form-search ">
+        <label for="search">Search:</label>
+                <input id="search" type="text" name="q" class="input-text" autocomplete="off">
+                <select id="cat" name="cat">
+            <option value="">All Categories</option>
+                            <option value="97">Shop</option>
+                                            <option value="55">Our Story</option>
+                                            <option value="94">Contact Us</option>
+                                    </select>
+                <button type="submit" title="Search" class="button"><i class="icon-search"></i></button>
+        <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+        <div class="clearer"></div>
+    </div>

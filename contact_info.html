@@ -1,0 +1,29 @@
+<div class="row"><div class="col-sm-12">
+<i class="icon-phone"></i>
+<p>Phone</p>
+<p>(310) 222-8682</p>
+</div></div>
+<div class="row"><div class="col-sm-12">
+    <i class="icon-mail-alt"></i>
+    <p>Email</p>
+    <p>orders@shopshs.com</p>
+</div></div>
+
+<style>
+
+.contactsnav{
+  background-color:#d0d0d0;
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$(".navbutton").click(function(){
+		$(".navbutton").removeClass('contactsnav');
+		$(this).addClass('contactsnav');
+	});
+});
+</script>

@@ -1,0 +1,48 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+
+<div class="block">
+    <div class="block-title"><strong><span>Our Services</span></strong></div>
+    <div class="block-content">
+<ul class="features">
+    <li><i class="icon-ok theme-color"></i><a href="#">Free Shipping</a></li>
+    <li><i class="icon-ok  theme-color"></i><a href="#">Free Returns and Refunds</a></li>
+    <li><i class="icon-ok  theme-color"></i><a href="#">Expedited Delivery</a></li>
+    <li><i class="icon-ok  theme-color"></i><a href="#">New Products Every Month</a></li>
+    <li><i class="icon-ok  theme-color"></i><a href="#">New Promos Every Month</a></li>
+</ul>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+$(".mobilemenu a").each(function () {
+    if (this.href == document.URL) {
+        $(this).find("div").addClass('activenav');
+    }
+    if (window.location.pathname+window.location.search == "/") {
+        $("#homenav").addClass('activenav');
+    }
+    if (window.location.pathname+window.location.search == "/customer/account/login/"){
+        $("#accountnav").addClass('activenav');
+    }
+    if (window.location.pathname+window.location.search == "/customer/account/create/"){
+        $("#accountnav").addClass('activenav');
+    }
+});
+$(".navbutton").click(function(){
+  $(".navbutton").removeClass('activenav');
+  $(this).addClass('activenav');
+});
+});
+
+</script>
+
+<!-- To hide nav bar when keyboard on mobile appears -->
+<script type="text/javascript">
+    document.write( '<style>.mobilemenu{display:none;}@media (min-height:' + ($( window ).height() - 10) + 'px) and (max-width:425px){.mobilemenu{display:block;}}</style>' );
+</script>
